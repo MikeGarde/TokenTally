@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - TokenTally</title>
+  <meta name="description" content="TokenTally Privacy Policy: We do not collect, transmit, store, or share any personal data, usage metrics, or telemetry. 100% on-device privacy.">
+  <link rel="canonical" href="https://tokentally.garde.one/privacy">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tokentally.garde.one/privacy">
+  <meta property="og:title" content="TokenTally Privacy Policy: Zero Data Collection">
+  <meta property="og:description" content="TokenTally does not collect any data. Period. 100% on-device and private.">
+  <meta property="og:image" content="https://tokentally.garde.one/assets/appstore/tokentally-mac-2560x1600.png">
+
+  <style>
+    :root {
+      --bg: #090d16;
+      --bg-surface: #111827;
+      --bg-surface-elevated: #1a2234;
+      --bg-glass: rgba(17, 24, 39, 0.75);
+      --border: rgba(255, 255, 255, 0.08);
+      --border-highlight: rgba(56, 189, 248, 0.3);
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --primary: #38bdf8;
+      --primary-glow: rgba(56, 189, 248, 0.15);
+      --accent-green: #34d399;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", system-ui, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    /* Ambient background glow */
+    .bg-glow {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw;
+      max-width: 1200px;
+      height: 500px;
+      background: radial-gradient(circle at 50% 10%, rgba(52, 211, 153, 0.08) 0%, transparent 65%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      background-color: var(--bg-glass);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 700;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.15s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 60px 24px 100px;
+    }
+
+    .policy-header {
+      margin-bottom: 48px;
+    }
+
+    .badge-privacy {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(52, 211, 153, 0.1);
+      border: 1px solid rgba(52, 211, 153, 0.25);
+      color: var(--accent-green);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+
+    .last-updated {
+      color: var(--text-dim);
+      font-size: 0.95rem;
+    }
+
+    /* Core Statement Callout Box */
+    .summary-card {
+      background: linear-gradient(180deg, rgba(52, 211, 153, 0.07) 0%, rgba(17, 24, 39, 0.8) 100%);
+      border: 1px solid rgba(52, 211, 153, 0.3);
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      margin-bottom: 48px;
+    }
+
+    .summary-card h2 {
+      color: #fff;
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .summary-card h2 svg {
+      color: var(--accent-green);
+    }
+
+    .summary-card p {
+      color: #e2e8f0;
+      font-size: 1.05rem;
+      line-height: 1.65;
+    }
+
+    /* Policy Content */
+    .policy-content section {
+      margin-bottom: 40px;
+    }
+
+    .policy-content h2 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 16px;
+      letter-spacing: -0.015em;
+    }
+
+    .policy-content p {
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      font-size: 1rem;
+    }
+
+    .policy-content ul {
+      list-style-type: disc;
+      padding-left: 24px;
+      margin-bottom: 20px;
+      color: var(--text-muted);
+    }
+
+    .policy-content li {
+      margin-bottom: 10px;
+      padding-left: 4px;
+    }
+
+    .policy-content strong {
+      color: #f8fafc;
+    }
+
+    .nutrition-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0 24px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+
+    .nutrition-table th, .nutrition-table td {
+      padding: 14px 18px;
+      text-align: left;
+      font-size: 0.95rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nutrition-table th {
+      background: var(--bg-surface-elevated);
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .nutrition-table td {
+      color: var(--text-muted);
+    }
+
+    .nutrition-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--accent-green);
+      font-weight: 600;
+      font-size: 0.88rem;
+    }
+
+    .contact-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      margin-top: 20px;
+    }
+
+    .contact-box a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 24px;
+      background-color: var(--bg);
+    }
+
+    .footer-container {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      color: var(--text-dim);
+      font-size: 0.88rem;
+    }
+
+    .footer-container a {
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    .footer-container a:hover {
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-glow"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <a href="/" class="brand">
+        <img src="/favicon.svg" alt="TokenTally Logo" class="brand-icon">
+        <span>TokenTally</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#features">Features</a></li>
+        <li><a href="/privacy" style="color: var(--accent-green);">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="policy-header">
+      <div class="badge-privacy">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        Zero-Data-Collection Policy
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="last-updated">Effective Date: October 5, 2026 · Domain: <strong>tokentally.garde.one</strong></p>
+    </div>
+
+    <!-- Core Statement Card -->
+    <div class="summary-card">
+      <h2>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        The Short Version: We Collect Nothing
+      </h2>
+      <p>
+        <strong>TokenTally does not collect, record, transmit, sell, or share any personal data, usage data, prompts, or device telemetry.</strong> The application operates locally on your Mac. You do not need to create an account, register, or provide any personal details to use TokenTally.
+      </p>
+    </div>
+
+    <div class="policy-content">
+      <section>
+        <h2>1. Privacy Nutrition Label</h2>
+        <p>
+          In accordance with Apple's App Store Privacy Guidelines, the disclosure below outlines our privacy practices across all standard Apple data categories. TokenTally does not collect any data from this application.
+        </p>
+        <table class="nutrition-table">
+          <thead>
+            <tr>
+              <th>Data Category</th>
+              <th>Status</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Contact Info</td>
+              <td><span class="status-badge">✔ Data Not Collected</span></td>
+              <td>No name, email address, phone number, physical address, or contact details are collected.</td>
+            </tr>
+            <tr>
+              <td>Identifiers</td>
+              <td><span class="status-badge">✔ Data Not Collected</span></td>
+              <td>No user IDs, device serial numbers, IDFV, advertising IDs, or hardware identifiers are tracked.</td>
+            </tr>
+            <tr>
+              <td>Usage Data</td>
+              <td><span class="status-badge">✔ Data Not Collected</span></td>
+              <td>No product interaction, app launches, button clicks, model views, or behavioral analytics are recorded.</td>
+            </tr>
+            <tr>
+              <td>User Content</td>
+              <td><span class="status-badge">✔ Data Not Collected</span></td>
+              <td>No prompts, text, chat logs, completions, or user inputs are collected, stored, or monitored.</td>
+            </tr>
+            <tr>
+              <td>Diagnostics</td>
+              <td><span class="status-badge">✔ Data Not Collected</span></td>
+              <td>No third-party crash logs, launch times, hang rates, or performance metrics are transmitted.</td>
+            </tr>
+            <tr>
+              <td>Financial Info</td>
+              <td><span class="status-badge">✔ Data Not Collected</span></td>
+              <td>No payment information, credit cards, billing data, or financial details are collected.</td>
+            </tr>
+            <tr>
+              <td>Location</td>
+              <td><span class="status-badge">✔ Data Not Collected</span></td>
+              <td>No precise or coarse geographic location data is accessed or collected.</td>
+            </tr>
+            <tr>
+              <td>Browsing & Search</td>
+              <td><span class="status-badge">✔ Data Not Collected</span></td>
+              <td>No in-app search queries, browsing history, or external web traffic are collected.</td>
+            </tr>
+            <tr>
+              <td>Data Used to Track You</td>
+              <td><span class="status-badge">✔ Data Not Collected</span></td>
+              <td>TokenTally does not link your data with third-party data for targeted advertising or tracking.</td>
+            </tr>
+          </tbody>
+        </table>
+        <ul>
+          <li><strong>No TokenTally Account Required:</strong> You never need to create an account, register, or share personal profile information to use TokenTally.</li>
+          <li><strong>Zero Telemetry:</strong> There are no background monitoring services, event logging, or telemetry pings.</li>
+          <li><strong>No Prompts or Content Monitored:</strong> TokenTally is a pricing and benchmark reference tool that never inspects or logs user prompts or outputs.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>2. How the App Operates</h2>
+        <p>
+          Everything in TokenTally operates locally on your Mac. All calculations, pricing comparisons, and benchmark evaluations run directly on your device.
+        </p>
+        <p>
+          Model pricing specifications and benchmark Elo scores are bundled directly with the application. The app does not make network requests to retrieve this data.
+        </p>
+        <p>
+          Future releases may allow you to call services you already use (such as checking your balance or usage with a provider), and TokenTally will not collect any data.
+        </p>
+      </section>
+
+      <section>
+        <h2>3. Third-Party Services and Analytics</h2>
+        <p>
+          We deliberately avoid third-party telemetry, tracking, and advertising services. TokenTally contains:
+        </p>
+        <ul>
+          <li><strong>No Google Analytics, Firebase, or Mixpanel</strong></li>
+          <li><strong>No Facebook or social media SDKs</strong></li>
+          <li><strong>No advertising networks or trackers</strong></li>
+          <li><strong>No third-party crash reporters</strong></li>
+        </ul>
+        <p>
+          If you download the app from the Mac App Store, Apple may collect aggregated, anonymized crash logs or download metrics in accordance with your macOS system diagnostic settings and Apple's own privacy policy. TokenTally does not combine or receive identifiable user data from Apple.
+        </p>
+      </section>
+
+      <section>
+        <h2>4. Website Privacy (tokentally.garde.one)</h2>
+        <p>
+          This website (<code>tokentally.garde.one</code>) is a static website hosted via GitHub Pages. It does not use tracking cookies, localStorage trackers, advertising beacons, or third-party behavioral analytics scripts.
+        </p>
+      </section>
+
+      <section>
+        <h2>5. Data Retention and Deletion</h2>
+        <p>
+          Because TokenTally does not collect, receive, or store any personal data or usage data, there is no personal data to retain, modify, or delete. If you uninstall TokenTally from your Mac, all local application support files and preferences are immediately removed by macOS.
+        </p>
+      </section>
+
+      <section>
+        <h2>6. Children's Privacy</h2>
+        <p>
+          TokenTally does not knowingly collect any information from children under the age of 13 (or under 16 in certain jurisdictions), nor from anyone else of any age.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. Changes to this Policy</h2>
+        <p>
+          If we ever make changes to this policy, the updated version will be posted immediately at <code>https://tokentally.garde.one/privacy</code> with an updated revision date. Our core commitment: zero user tracking and zero data collection remains unchanging.
+        </p>
+      </section>
+
+      <section>
+        <h2>8. Contact Us</h2>
+        <p>
+          If you have questions, feedback, or inquiries regarding this Privacy Policy or TokenTally, you can contact the developer:
+        </p>
+        <div class="contact-box">
+          <p><strong>Developer:</strong> Mike Garde</p>
+          <p><strong>Domain:</strong> <a href="https://tokentally.garde.one">tokentally.garde.one</a></p>
+          <p><strong>Repository:</strong> <a href="https://github.com/mikegarde/TokenTally-pub" target="_blank" rel="noopener">github.com/mikegarde/TokenTally-pub</a></p>
+          <p><strong>Email:</strong> <a href="mailto:tokentally@garde.one">tokentally@garde.one</a></p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div>
+        &copy; 2026 Mike Garde. All rights reserved.
+      </div>
+      <div>
+        <a href="/">← Return to TokenTally Home</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
