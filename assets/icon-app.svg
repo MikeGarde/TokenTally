@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="16" y1="12" x2="112" y2="116" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="60%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+  </defs>
+  <!-- macOS style squircle container -->
+  <rect x="8" y="8" width="112" height="112" rx="26" fill="url(#bgGrad)" />
+  <rect x="8" y="8" width="112" height="112" rx="26" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1.5" />
+  
+  <g stroke="#FFFFFF" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(14, 14)">
+    <!-- Shield outline -->
+    <path d="M 24 24 C 24 18 28 16 34 16 L 66 16 C 72 16 76 20 76 26 L 76 52 C 76 71 52 84 50 85 C 48 84 24 71 24 52 Z" fill="#FFFFFF" fill-opacity="0.1" />
+    <!-- T symbol -->
+    <path d="M 34 27 L 54 27 M 44 27 L 44 40" stroke-width="4.5" />
+    <!-- Token coins -->
+    <circle cx="48" cy="68" r="4.5" stroke-width="4" fill="#FFFFFF" fill-opacity="0.2" />
+    <circle cx="62" cy="56" r="4.5" stroke-width="4" fill="#FFFFFF" fill-opacity="0.2" />
+    <!-- Trendline with arrow -->
+    <circle cx="18" cy="62" r="4.5" stroke-width="4.5" fill="#FFFFFF" />
+    <polyline points="22 60 38 46 48 56 80 20" stroke-width="6" />
+    <path d="M 66 20 L 80 20 L 80 34" stroke-width="6" />
+  </g>
+</svg>
